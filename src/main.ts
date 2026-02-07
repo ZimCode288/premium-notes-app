@@ -19,10 +19,11 @@ function renderNotes() {
   const notes = getNotes();
   notesGrid.innerHTML = '';
 
-  notes.forEach(note => {
+  notes.forEach((note, index) => {
     const card = document.createElement('div');
     card.className = 'note-card';
     card.setAttribute('data-id', note.id);
+    card.style.animationDelay = `${index * 0.05}s`;
     
     card.innerHTML = `
       <h3>${escapeHtml(note.title || 'Untitled')}</h3>
