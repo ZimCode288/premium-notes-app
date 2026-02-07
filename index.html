@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Premium Notes</title>
+    <meta name="description" content="A minimalist, premium note-taking application." />
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <h1>Premium Notes</h1>
+        <p class="subtitle">Crafted with Precision</p>
+      </header>
+
+      <main>
+        <section class="note-input-container">
+          <input type="text" id="note-title" placeholder="Note Title" autocomplete="off" />
+          <textarea id="note-content" placeholder="Take a note..."></textarea>
+          <div class="controls">
+            <button id="add-note-btn">
+              <span>Save Note</span>
+            </button>
+          </div>
+        </section>
+
+        <section class="notes-grid" id="notes-grid">
+          <!-- Notes will be injected here -->
+        </section>
+      </main>
+
+      <footer>
+        <a href="https://github.com" id="footer-link" target="_blank" rel="noopener">Built with OpenClaw</a>
+      </footer>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
